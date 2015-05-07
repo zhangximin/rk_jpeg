@@ -1,0 +1,28 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := \
+        main.c      
+LOCAL_MODULE := vpu_apiDemo
+
+LOCAL_STATIC_LIBRARIES :=
+		
+LOCAL_SHARED_LIBRARIES := \
+	libvpu \
+	librk_on2 \
+	libcutils \
+	liblog \
+			     
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/include \
+	$(TOP)/hardware/rk29/libon2/
+
+ifeq ($(PLATFORM_VERSION),4.0.4)
+	LOCAL_CFLAGS := -DAVS40
+endif
+	
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_CFLAGS := -DOSCL_IMPORT_REF= -DOSCL_UNUSED_ARG= -DOSCL_EXPORT_REF=
+
+include $(BUILD_EXECUTABLE)

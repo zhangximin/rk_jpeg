@@ -1,0 +1,45 @@
+export SDKTARGETSYSROOT=/home/simon/currentWork/rk_jpeg/rootfs
+export PATH=/home/simon/currentWork/rk_jpeg/gcc-linaro-arm-linux-gnueabihf-4.7-2013.04-20130415_linux/bin:$PATH
+export PKG_CONFIG_SYSROOT_DIR=$SDKTARGETSYSROOT
+export PKG_CONFIG_PATH=$SDKTARGETSYSROOT/usr/lib/pkgconfig
+#export CONFIG_SITE=/opt/poky/1.7.1/site-config-cortexa9hf-vfp-neon-poky-linux-gnueabi
+export OECORE_NATIVE_SYSROOT="/home/simon/currentWork/rk_jpeg/gcc-linaro-arm-linux-gnueabihf-4.7-2013.04-20130415_linux/arm-linux-gnueabihf"
+#export OECORE_TARGET_SYSROOT="$SDKTARGETSYSROOT"
+#export OECORE_ACLOCAL_OPTS="-I /opt/poky/1.7.1/sysroots/x86_64-pokysdk-linux/usr/share/aclocal"
+#export PYTHONHOME=/opt/poky/1.7.1/sysroots/x86_64-pokysdk-linux/usr
+export CC="arm-linux-gnueabihf-gcc  -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=$SDKTARGETSYSROOT"
+export CXX="arm-linux-gnueabihf-g++  -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=$SDKTARGETSYSROOT"
+export CPP="arm-linux-gnueabihf-gcc -E  -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=$SDKTARGETSYSROOT"
+export AS="arm-linux-gnueabihf-as "
+export LD="arm-linux-gnueabihf-ld  --sysroot=$SDKTARGETSYSROOT"
+export GDB=arm-linux-gnueabihf-gdb
+export STRIP=arm-linux-gnueabihf-strip
+export RANLIB=arm-linux-gnueabihf-ranlib
+export OBJCOPY=arm-linux-gnueabihf-objcopy
+export OBJDUMP=arm-linux-gnueabihf-objdump
+export AR=arm-linux-gnueabihf-ar
+export NM=arm-linux-gnueabihf-nm
+export M4=m4
+export TARGET_PREFIX=arm-linux-gnueabihf-
+export CONFIGURE_FLAGS="--target=arm-linux-gnueabihf --host=arm-linux-gnueabihf --build=x86_64-linux --with-libtool-sysroot=$SDKTARGETSYSROOT"
+export CFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
+export CXXFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
+export LDFLAGS="-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed"
+export CPPFLAGS=""
+export KCFLAGS="--sysroot=$SDKTARGETSYSROOT"
+export OECORE_DISTRO_VERSION="1.7.1"
+export OECORE_SDK_VERSION="1.7.1"
+export ARCH=arm
+export CROSS_COMPILE=arm-linux-gnueabihf-
+
+# Append environment subscripts
+if [ -d "$OECORE_TARGET_SYSROOT/environment-setup.d" ]; then
+    for envfile in $OECORE_TARGET_SYSROOT/environment-setup.d/*.sh; do
+	    source $envfile
+    done
+fi
+if [ -d "$OECORE_NATIVE_SYSROOT/environment-setup.d" ]; then
+    for envfile in $OECORE_NATIVE_SYSROOT/environment-setup.d/*.sh; do
+	    source $envfile
+    done
+fi

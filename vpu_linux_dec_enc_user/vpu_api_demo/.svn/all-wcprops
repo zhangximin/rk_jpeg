@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/RK29/!svn/ver/567/trunk/android_vpu/vpu_api_demo
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/RK29/!svn/ver/567/trunk/android_vpu/vpu_api_demo/main.c
+END
+Android.mk
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/RK29/!svn/ver/539/trunk/android_vpu/vpu_api_demo/Android.mk
+END
+readMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/RK29/!svn/ver/567/trunk/android_vpu/vpu_api_demo/readMe.txt
+END
+test_bitstream_320x240,259 Kbps,29.970fps,WMV3,32.0 Kbps-Journey.bin
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/RK29/!svn/ver/409/trunk/android_vpu/vpu_api_demo/test_bitstream_320x240,259%20Kbps,29.970fps,WMV3,32.0%20Kbps-Journey.bin
+END
+vpu_enc_input_yuv420sp_320x240.yuv
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/RK29/!svn/ver/567/trunk/android_vpu/vpu_api_demo/vpu_enc_input_yuv420sp_320x240.yuv
+END

@@ -1,0 +1,144 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BRIGHTNESS	.\hw_jpegdecapi.h	58;"	d
+BitsPerSample_Tag	.\hw_jpegdecutils.h	69;"	d
+CHECK_BYTE	.\hw_jpegdecutils.h	58;"	d
+CODEBEGIN	.\hw_jpegdecapi.h	30;"	d
+CODEEND	.\hw_jpegdecapi.h	34;"	d
+CONTRAST	.\hw_jpegdecapi.h	59;"	d
+Compression_Tag	.\hw_jpegdecutils.h	70;"	d
+DEFAULT	.\hw_jpegdecapi.c	21;"	d	file:
+DataFormat	.\hw_jpegdecutils.h	/^static int DataFormat[12] = {1,1,2,4,8,1,1,2,4,8,4,8};$/;"	v
+HW_BOOL	.\hw_jpegdecapi.h	/^typedef int HW_BOOL;$/;"	t
+HW_JPEGDECAPI_H	.\hw_jpegdecapi.h	2;"	d
+HW_JPEGDECUTILS_H	.\hw_jpegdecutils.h	2;"	d
+HwJpegInputInfo	.\hw_jpegdecapi.h	/^} HwJpegInputInfo;$/;"	t	typeref:struct:Hw_Jpeg_InputInfo
+HwJpegOutputInfo	.\hw_jpegdecapi.h	/^} HwJpegOutputInfo;$/;"	t	typeref:struct:__anon4
+Hw_Jpeg_InputInfo	.\hw_jpegdecapi.h	/^typedef struct Hw_Jpeg_InputInfo$/;"	s
+INTEL_ALIGN	.\hw_jpegdecutils.h	30;"	d
+ImageLength_Tag	.\hw_jpegdecutils.h	68;"	d
+ImageWidth_Tag	.\hw_jpegdecutils.h	67;"	d
+JPEGDEC_HAVE_DRI	.\hw_jpegdecutils.h	/^	JPEGDEC_HAVE_DRI = 1 << 4,$/;"	e	enum:__anon5
+JPEGDEC_THUMB_HAVE_DRI	.\hw_jpegdecutils.h	/^	JPEGDEC_THUMB_HAVE_DRI = 1 << 5,$/;"	e	enum:__anon5
+JPEGDEC_THUMB_SAMPLE_UNSUPPORT	.\hw_jpegdecutils.h	/^	JPEGDEC_THUMB_SAMPLE_UNSUPPORT = 1 << 6$/;"	e	enum:__anon5
+JPEGDEC_THUMB_SUPPORTED	.\hw_jpegdecutils.h	/^	JPEGDEC_THUMB_SUPPORTED = 0,$/;"	e	enum:__anon5
+JPEGDEC_THUMB_UNSUPPORTEDSIZE	.\hw_jpegdecutils.h	/^	JPEGDEC_THUMB_UNSUPPORTEDSIZE = 1<<1,$/;"	e	enum:__anon5
+JPEGDEC_THUMB_YUV_UNSUPPORTED	.\hw_jpegdecutils.h	/^	JPEGDEC_THUMB_YUV_UNSUPPORTED = 1<<3,$/;"	e	enum:__anon5
+JPEGDEC_UNSUPPORTEDSIZE	.\hw_jpegdecutils.h	/^	JPEGDEC_UNSUPPORTEDSIZE = 1,$/;"	e	enum:__anon5
+JPEGDEC_YUV_UNSUPPORTED	.\hw_jpegdecutils.h	/^	JPEGDEC_YUV_UNSUPPORTED = 1<<2,$/;"	e	enum:__anon5
+JPEG_INPUT_BUFFER	.\hw_jpegdecapi.h	53;"	d
+JPEG_INPUT_BUFFER	.\hw_jpegdecapi.h	55;"	d
+JpegDecGetSimpleImageInfo	.\hw_jpegdecutils.c	/^JpegDecRet JpegDecGetSimpleImageInfo(HwJpegInputInfo * hwInfo, JpegDecInput * pDecIn,$/;"	f
+JpegIFByteCount_Tag	.\hw_jpegdecutils.h	81;"	d
+JpegIFOffset_Tag	.\hw_jpegdecutils.h	80;"	d
+JpegStream	.\hw_jpegdecutils.c	/^}JpegStream;$/;"	t	typeref:struct:__anon6	file:
+LOG_TAG	.\hw_jpegdecapi.h	18;"	d
+LOG_TAG	.\hw_jpegdecapi.h	20;"	d
+LocalGetSystemTime	.\hw_jpegdecapi.c	/^static unsigned int LocalGetSystemTime(void)$/;"	f	file:
+LocalPrint	.\hw_jpegdecapi.c	24;"	d	file:
+LocalPrint	.\hw_jpegdecapi.c	26;"	d	file:
+MOTOROLA_ALIGN	.\hw_jpegdecutils.h	29;"	d
+OK	.\hw_jpegdecutils.c	11;"	d	file:
+PP_IN_FORMAT_YUV400	.\hw_jpegdecapi.h	40;"	d
+PP_IN_FORMAT_YUV411_SEMI	.\hw_jpegdecapi.h	45;"	d
+PP_IN_FORMAT_YUV420PLANAR	.\hw_jpegdecapi.h	39;"	d
+PP_IN_FORMAT_YUV420SEMI	.\hw_jpegdecapi.h	38;"	d
+PP_IN_FORMAT_YUV420SEMITIELED	.\hw_jpegdecapi.h	42;"	d
+PP_IN_FORMAT_YUV422INTERLAVE	.\hw_jpegdecapi.h	37;"	d
+PP_IN_FORMAT_YUV422SEMI	.\hw_jpegdecapi.h	41;"	d
+PP_IN_FORMAT_YUV440SEMI	.\hw_jpegdecapi.h	43;"	d
+PP_IN_FORMAT_YUV444_SEMI	.\hw_jpegdecapi.h	44;"	d
+PP_OUT_FORMAT_ARGB	.\hw_jpegdecapi.h	48;"	d
+PP_OUT_FORMAT_RGB565	.\hw_jpegdecapi.h	47;"	d
+PP_OUT_FORMAT_YUV420INTERLAVE	.\hw_jpegdecapi.h	50;"	d
+PP_OUT_FORMAT_YUV422INTERLAVE	.\hw_jpegdecapi.h	49;"	d
+PalnarConfiguration_Tag	.\hw_jpegdecutils.h	78;"	d
+PhotometricInterpretation_Tag	.\hw_jpegdecutils.h	71;"	d
+PostProcessInfo	.\hw_jpegdecapi.h	/^} PostProcessInfo;$/;"	t	typeref:struct:__anon2
+PrintRet	.\hw_jpegdecapi.c	/^static void PrintRet(JpegDecRet * pJpegRet)$/;"	f	file:
+REVERSE_BYTES	.\hw_jpegdecutils.h	32;"	d
+REVERSE_LOW_TWO_BYTES	.\hw_jpegdecutils.h	46;"	d
+ReferenceBlackWhite_Tag	.\hw_jpegdecutils.h	85;"	d
+ResolutionUnit_Tag	.\hw_jpegdecutils.h	79;"	d
+ReusePmem	.\hw_jpegdecapi.h	/^}ReusePmem;$/;"	t	typeref:struct:__anon3
+RowsPerStrip_Tag	.\hw_jpegdecutils.h	74;"	d
+SATURATION	.\hw_jpegdecapi.h	60;"	d
+STRM_ERROR	.\hw_jpegdecutils.c	8;"	d	file:
+SamplesPerPixel_Tag	.\hw_jpegdecutils.h	73;"	d
+SetPostProcessor	.\hw_jpegdecapi.c	/^int SetPostProcessor(unsigned int * reg,VPUMemLinear_t *dst,int inWidth,int inHeigth,$/;"	f
+SourceStreamCtl	.\hw_jpegdecapi.h	/^} SourceStreamCtl;$/;"	t	typeref:struct:__anon1
+StripByteCounts_Tag	.\hw_jpegdecutils.h	75;"	d
+StripOffsets_Tag	.\hw_jpegdecutils.h	72;"	d
+USE_DSTWH_DOSCALE	.\hw_jpegdecapi.h	62;"	d
+VIDEORANGE	.\hw_jpegdecapi.c	236;"	d	file:
+WHALLLOG	.\hw_jpegdecapi.h	12;"	d
+WHLOG	.\hw_jpegdecapi.h	21;"	d
+WHLOG	.\hw_jpegdecapi.h	23;"	d
+WHREDLOG	.\hw_jpegdecapi.h	15;"	d
+WHREDLOG	.\hw_jpegdecapi.h	24;"	d
+XResolution_Tag	.\hw_jpegdecutils.h	76;"	d
+YCbCrCoefficients_Tag	.\hw_jpegdecutils.h	82;"	d
+YCbCrPositioning_Tag	.\hw_jpegdecutils.h	84;"	d
+YCbCrSubSampling_Tag	.\hw_jpegdecutils.h	83;"	d
+YResolution_Tag	.\hw_jpegdecutils.h	77;"	d
+appnFlag	.\hw_jpegdecutils.c	/^	RK_U32 appnFlag;$/;"	m	struct:__anon6	file:
+bitPosInByte	.\hw_jpegdecutils.c	/^	RK_U32 bitPosInByte;$/;"	m	struct:__anon6	file:
+bytes_in_buffer	.\hw_jpegdecapi.h	/^	long bytes_in_buffer;$/;"	m	struct:hw_jpeg_source_mgr
+cropH	.\hw_jpegdecapi.h	/^  int cropH;$/;"	m	struct:__anon2
+cropW	.\hw_jpegdecapi.h	/^  int cropW;$/;"	m	struct:__anon2
+cropX	.\hw_jpegdecapi.h	/^  int cropX;$/;"	m	struct:__anon2
+cropY	.\hw_jpegdecapi.h	/^  int cropY;$/;"	m	struct:__anon2
+cur_offset_instream	.\hw_jpegdecapi.h	/^	long cur_offset_instream;$/;"	m	struct:hw_jpeg_source_mgr
+decoderHandle	.\hw_jpegdecapi.h	/^  void * decoderHandle;$/;"	m	struct:__anon4
+dstHeight	.\hw_jpegdecapi.h	/^  int dstHeight;$/;"	m	struct:__anon2
+dstWidth	.\hw_jpegdecapi.h	/^  int dstWidth;\/\/scale_denom==0 && dstWidth !=0 && dstHeight!=0$/;"	m	struct:__anon2
+errorOccur	.\hw_jpegdecutils.c	/^	HW_BOOL errorOccur;$/;"	m	struct:__anon6	file:
+fill_buffer	.\hw_jpegdecapi.h	/^	int (*fill_buffer)(HwJpegInputInfo* hwInfo, void * destination, VPUMemLinear_t *newmem, int w, int h);\/\/fill destination with stream$/;"	m	struct:hw_jpeg_source_mgr
+fill_input_buffer	.\hw_jpegdecapi.h	/^	HW_BOOL (*fill_input_buffer)(HwJpegInputInfo* hwInfo);$/;"	m	struct:hw_jpeg_source_mgr
+fill_thumb	.\hw_jpegdecapi.h	/^	int (*fill_thumb)(HwJpegInputInfo* hwInfo, void * thumbBuf);\/\/fill thumbBuf with thumbmsg if has thumb$/;"	m	struct:hw_jpeg_source_mgr
+get_vpumemInst	.\hw_jpegdecapi.h	/^	void (*get_vpumemInst)(HwJpegInputInfo* hwInfo, VPUMemLinear_t* vpumem);$/;"	m	struct:hw_jpeg_source_mgr
+hw_JpegDecFlushBits	.\hw_jpegdecutils.c	/^static RK_U32 hw_JpegDecFlushBits(JpegStream * pStream, RK_U32 bits, struct hw_jpeg_source_mgr *src)$/;"	f	file:
+hw_JpegDecGet2Bytes	.\hw_jpegdecutils.c	/^static RK_U32 hw_JpegDecGet2Bytes(JpegStream * pStream, struct hw_jpeg_source_mgr *src)$/;"	f	file:
+hw_JpegDecGetByte	.\hw_jpegdecutils.c	/^static RK_U32 hw_JpegDecGetByte(JpegStream * pStream, struct hw_jpeg_source_mgr *src){$/;"	f	file:
+hw_jpeg_VPUFreeLinear	.\hw_jpegdecapi.c	/^int hw_jpeg_VPUFreeLinear(VPUMemLinear_t *p){$/;"	f
+hw_jpeg_VPUMallocLinear	.\hw_jpegdecapi.c	/^int hw_jpeg_VPUMallocLinear(VPUMemLinear_t *p, int size){$/;"	f
+hw_jpeg_decode	.\hw_jpegdecapi.c	/^int hw_jpeg_decode(HwJpegInputInfo *inInfo, HwJpegOutputInfo *outInfo, char *reuseBitmap, int bm_w, int bm_h){$/;"	f
+hw_jpeg_release	.\hw_jpegdecapi.c	/^int hw_jpeg_release(void *decInst)$/;"	f
+hw_jpeg_source_mgr	.\hw_jpegdecapi.h	/^struct hw_jpeg_source_mgr{$/;"	s
+inStream	.\hw_jpegdecapi.h	/^  struct hw_jpeg_source_mgr * inStream;$/;"	m	struct:__anon1	typeref:struct:__anon1::hw_jpeg_source_mgr
+info	.\hw_jpegdecapi.h	/^	HwJpegInputInfo* info;$/;"	m	struct:hw_jpeg_source_mgr
+init_source	.\hw_jpegdecapi.h	/^	void (*init_source)(HwJpegInputInfo* hwInfo);$/;"	m	struct:hw_jpeg_source_mgr
+isVpuMem	.\hw_jpegdecapi.h	/^	HW_BOOL	isVpuMem;$/;"	m	struct:hw_jpeg_source_mgr
+justcaloutwh	.\hw_jpegdecapi.h	/^  HW_BOOL justcaloutwh;$/;"	m	struct:Hw_Jpeg_InputInfo
+next_input_byte	.\hw_jpegdecapi.h	/^	const unsigned char * next_input_byte;$/;"	m	struct:hw_jpeg_source_mgr
+outAddr	.\hw_jpegdecapi.h	/^  char *outAddr;$/;"	m	struct:__anon4
+outFomart	.\hw_jpegdecapi.h	/^  int outFomart; \/* =0,RGB565;=1,ARGB 8888 *\/$/;"	m	struct:__anon2
+outHeight	.\hw_jpegdecapi.h	/^  int outHeight;$/;"	m	struct:__anon4
+outWidth	.\hw_jpegdecapi.h	/^  int outWidth;$/;"	m	struct:__anon4
+ppInfo	.\hw_jpegdecapi.h	/^  PostProcessInfo  ppInfo;$/;"	m	struct:Hw_Jpeg_InputInfo
+ppscaleh	.\hw_jpegdecapi.h	/^  int ppscaleh;$/;"	m	struct:__anon4
+ppscalew	.\hw_jpegdecapi.h	/^  int ppscalew;$/;"	m	struct:__anon4
+printDecPPRegs	.\hw_jpegdecapi.c	/^int printDecPPRegs(RK_U32* regs){$/;"	f
+readBits	.\hw_jpegdecutils.c	/^	RK_U32 readBits;$/;"	m	struct:__anon6	file:
+read_1_byte	.\hw_jpegdecapi.h	/^	HW_BOOL (*read_1_byte)(HwJpegInputInfo* hwInfo, unsigned char *ch);\/\/read one byte from stream$/;"	m	struct:hw_jpeg_source_mgr
+resetImageInfo	.\hw_jpegdecapi.c	/^void resetImageInfo(JpegDecImageInfo * imageInfo){$/;"	f
+resync_to_restart	.\hw_jpegdecapi.h	/^	HW_BOOL (*resync_to_restart)(HwJpegInputInfo* hwInfo);$/;"	m	struct:hw_jpeg_source_mgr
+reuse	.\hw_jpegdecapi.h	/^	HW_BOOL reuse;$/;"	m	struct:__anon3
+scale_denom	.\hw_jpegdecapi.h	/^  int scale_denom;$/;"	m	struct:__anon2
+seek_input_data	.\hw_jpegdecapi.h	/^	HW_BOOL (*seek_input_data)(HwJpegInputInfo* hwInfo, long byte_offset);$/;"	m	struct:hw_jpeg_source_mgr
+shouldDither	.\hw_jpegdecapi.h	/^  HW_BOOL shouldDither;$/;"	m	struct:__anon2
+shouldScale	.\hw_jpegdecapi.h	/^  HW_BOOL shouldScale;$/;"	m	struct:__anon4
+skip_input_data	.\hw_jpegdecapi.h	/^	HW_BOOL (*skip_input_data)(HwJpegInputInfo* hwInfo, long num_bytes);$/;"	m	struct:hw_jpeg_source_mgr
+streamCtl	.\hw_jpegdecapi.h	/^  SourceStreamCtl  streamCtl;$/;"	m	struct:Hw_Jpeg_InputInfo
+streamLength	.\hw_jpegdecutils.c	/^	RK_U32 streamLength;$/;"	m	struct:__anon6	file:
+thumbLength	.\hw_jpegdecapi.h	/^  int thumbLength;$/;"	m	struct:__anon1
+thumbOffset	.\hw_jpegdecapi.h	/^  int thumbOffset;$/;"	m	struct:__anon1
+thumbPmem	.\hw_jpegdecapi.h	/^  ReusePmem* thumbPmem;$/;"	m	struct:__anon4
+thumbnail	.\hw_jpegdecutils.c	/^	RK_U32 thumbnail;$/;"	m	struct:__anon6	file:
+thumbpmem	.\hw_jpegdecapi.h	/^	VPUMemLinear_t thumbpmem;$/;"	m	struct:__anon3
+useThumb	.\hw_jpegdecapi.h	/^  HW_BOOL useThumb;$/;"	m	struct:__anon1
+wholeStreamLength	.\hw_jpegdecapi.h	/^  int wholeStreamLength;$/;"	m	struct:__anon1

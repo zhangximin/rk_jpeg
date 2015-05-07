@@ -1,0 +1,98 @@
+diff --git a/libvpu/avc_h264/dec/Makefile b/libvpu/avc_h264/dec/Makefile
+index a151688..875beee 100755
+--- a/libvpu/avc_h264/dec/Makefile
++++ b/libvpu/avc_h264/dec/Makefile
+@@ -61,7 +61,8 @@ SHARED_LIB += -L$(TOP_DIR)/../../../sharelib/
+ SHARED_LIB += -lvpu -lion
+ 
+ #RUN_LIB_DIR = -rpath $(TOP_DIR)/../../../sharelib/libvpu.so $(TOP_DIR)/../../../sharelib/libion.so
+-RUN_LIB_DIR = -rpath $(TOP_DIR)/../../../sharelib/libvpu.so 
++#RUN_LIB_DIR = -rpath $(TOP_DIR)/../../../sharelib/libvpu.so 
++RUN_LIB_DIR = 
+ #RUN_LIB_DIR = -rpath $(TOP_DIR)/../../../sharelib/libion.so
+ # $(TOP_DIR)/../../../sharelib/libvpu.so
+ # build steps
+diff --git a/libvpu/avc_h264/dec/libvpu_avcdec.so b/libvpu/avc_h264/dec/libvpu_avcdec.so
+index f320eaf..593fe70 100755
+Binary files a/libvpu/avc_h264/dec/libvpu_avcdec.so and b/libvpu/avc_h264/dec/libvpu_avcdec.so differ
+diff --git a/libvpu/avc_h264/enc/Makefile b/libvpu/avc_h264/enc/Makefile
+index a245e89..bf989d0 100755
+--- a/libvpu/avc_h264/enc/Makefile
++++ b/libvpu/avc_h264/enc/Makefile
+@@ -67,7 +67,8 @@ SHARED_LIB += -L$(TOP_DIR)/../../../sharelib/
+ SHARED_LIB += -lvpu
+ 
+ #RUN_LIB_DIR = -rpath $(TOP_DIR)/../../../sharelib/libvpu.so $(TOP_DIR)/../../../sharelib/libion.so
+-RUN_LIB_DIR = -rpath $(TOP_DIR)/../../../sharelib/libvpu.so 
++#RUN_LIB_DIR = -rpath $(TOP_DIR)/../../../sharelib/libvpu.so 
++RUN_LIB_DIR = 
+ 
+ # build steps
+ 
+diff --git a/libvpu/avc_h264/enc/libvpu_avcenc.so b/libvpu/avc_h264/enc/libvpu_avcenc.so
+index 6f09eaf..375867b 100755
+Binary files a/libvpu/avc_h264/enc/libvpu_avcenc.so and b/libvpu/avc_h264/enc/libvpu_avcenc.so differ
+diff --git a/libvpu/common/Makefile b/libvpu/common/Makefile
+index 2d44896..3a74732 100755
+--- a/libvpu/common/Makefile
++++ b/libvpu/common/Makefile
+@@ -43,7 +43,8 @@ CFLAGS += $(INCLUDE)
+ SHARED_LIB += -L../../sharelib/
+ SHARED_LIB +=  -lpthread -lion
+ 
+-RUN_LIB_DIR = -rpath $(TOP_DIR)/../../sharelib/libion.so
++#RUN_LIB_DIR = -rpath $(TOP_DIR)/../../sharelib/libion.so
++RUN_LIB_DIR = 
+ # build steps
+ 
+ .PHONY : all install clean
+diff --git a/libvpu/common/libvpu.so b/libvpu/common/libvpu.so
+index c7b2aa6..834f5bf 100755
+Binary files a/libvpu/common/libvpu.so and b/libvpu/common/libvpu.so differ
+diff --git a/libvpu/vpu_api/Makefile b/libvpu/vpu_api/Makefile
+index cab99a2..9100483 100755
+--- a/libvpu/vpu_api/Makefile
++++ b/libvpu/vpu_api/Makefile
+@@ -44,9 +44,9 @@ CFLAGS += $(INCLUDE)
+ SHARED_LIB += -L../../sharelib/
+ SHARED_LIB += -lion -lvpu -lvpu_avcdec -lpost_deinterlace -lstdc++ -ldl
+ 
+-RUN_LIB_DIR = -rpath $(TOP_DIR)/../../sharelib/libion.so $(TOP_DIR)/../../sharelib/libvpu.so \
++#RUN_LIB_DIR = -rpath $(TOP_DIR)/../../sharelib/libion.so $(TOP_DIR)/../../sharelib/libvpu.so \
+ 	$(TOP_DIR)/../../sharelib/libvpu_avcdec.so $(TOP_DIR)/../../sharelib/libpost_deinterlace.so
+-
++RUN_LIB_DIR = 
+ # build steps
+ 
+ .PHONY : all all_src install clean
+diff --git a/libvpu/vpu_api/librk_on2.so b/libvpu/vpu_api/librk_on2.so
+index 9937399..138c498 100755
+Binary files a/libvpu/vpu_api/librk_on2.so and b/libvpu/vpu_api/librk_on2.so differ
+diff --git a/sharelib/librk_on2.so b/sharelib/librk_on2.so
+index 9937399..138c498 100755
+Binary files a/sharelib/librk_on2.so and b/sharelib/librk_on2.so differ
+diff --git a/sharelib/libvpu.so b/sharelib/libvpu.so
+index c7b2aa6..834f5bf 100755
+Binary files a/sharelib/libvpu.so and b/sharelib/libvpu.so differ
+diff --git a/sharelib/libvpu_avcdec.so b/sharelib/libvpu_avcdec.so
+index f320eaf..593fe70 100755
+Binary files a/sharelib/libvpu_avcdec.so and b/sharelib/libvpu_avcdec.so differ
+diff --git a/sharelib/libvpu_avcenc.so b/sharelib/libvpu_avcenc.so
+index 6f09eaf..375867b 100755
+Binary files a/sharelib/libvpu_avcenc.so and b/sharelib/libvpu_avcenc.so differ
+diff --git a/vpu_api_demo/Makefile b/vpu_api_demo/Makefile
+index de0aefa..66f558e 100755
+--- a/vpu_api_demo/Makefile
++++ b/vpu_api_demo/Makefile
+@@ -52,9 +52,10 @@ SHARED_LIB += -L$(LIB_PATH)
+ #SHARED_LIB += -lvpu -lrk_on2 -lpost_deinterlace -lvpu_avcdec -lion
+ SHARED_LIB +=  -lvpu -lrk_on2 -lpost_deinterlace -lvpu_avcdec -lion
+ 
+-RUN_LIB_DIR = -rpath $(LIB_PATH)/libion.so $(LIB_PATH)/libvpu.so \
++#RUN_LIB_DIR = -rpath $(LIB_PATH)/libion.so $(LIB_PATH)/libvpu.so \
+         $(LIB_PATH)/libvpu_avcdec.so $(LIB_PATH)/libvpu_avcenc.so \
+ 	$(LIB_PATH)/libpost_deinterlace.so $(LIB_PATH)/librk_on2.so 
++RUN_LIB_DIR = 
+ 
+ # build steps
+ 
